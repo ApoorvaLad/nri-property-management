@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0b0b0b;
+  --accent: #dc2626;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-icon: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 0%, #fee2e2 0%, #ffffff 35%),
+    radial-gradient(circle at 90% 0%, #fef2f2 0%, #ffffff 40%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+.site-topbar {
+  background: #111110;
+  padding: 9px 60px;
+}
+
+.site-topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-topbar-left,
+.site-topbar-right {
+  display: flex;
+  gap: 24px;
+}
+
+.site-topbar a {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: #666560;
+  text-decoration: none;
+}
+
+.site-topbar a:hover {
+  color: #999894;
+}
+
+.site-topbar-right a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-topbar-right svg {
+  width: 14px;
+  height: 14px;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #f9f9f7;
+  border-bottom: 1px solid #e0ded9;
+  padding: 0 60px;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav-logo {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111110;
+  text-decoration: none;
+}
+
+.site-nav-logo span {
+  color: #d03030;
+}
+
+.site-nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.site-nav-links a {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999894;
+  text-decoration: none;
+  padding: 22px 22px;
+  border-left: 1px solid #e0ded9;
+  display: block;
+}
+
+.site-nav-links a:hover {
+  color: #111110;
+}
+
+.site-nav-links a.cta {
+  background: #d03030;
+  color: #fff;
+  border-color: #d03030;
+  font-weight: 600;
+}
+
+.site-nav-links a.cta:hover {
+  background: #a82424;
+  border-color: #a82424;
+}
+
+/* Comic Neue: short display accents only (titles, wordmark). Body stays Geist. */
+.font-comic-display {
+  font-family: var(--font-comic-neue), "Comic Sans MS", "Comic Sans", cursive;
+}
+
+::selection {
+  background: #fecaca;
+  color: #0b0b0b;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out both;
+}
+
+.animate-float-soft {
+  animation: float-soft 3.6s ease-in-out infinite;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 650ms ease,
+    transform 650ms ease;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-soft {
+    animation: none;
+  }
+
+  .reveal-on-scroll,
+  .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .site-topbar,
+  .site-nav {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .site-topbar-right,
+  .site-nav-links {
+    display: none;
+  }
+}
