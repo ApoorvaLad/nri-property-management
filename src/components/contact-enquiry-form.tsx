@@ -35,7 +35,17 @@ export default function ContactEnquiryForm() {
         body: JSON.stringify(formData),
       });
 
-      const data = (await response.json()) as { message?: string };
+      const raw = await response.text();
+      let data: { message?: string };
+      try {
+        data = JSON.parse(raw) as { message?: string };
+      } catch {
+        throw new Error(
+          response.status === 404 || raw.trimStart().startsWith("<!")
+            ? "Contact form is unavailable on this deployment. Use a full Next.js deploy on Vercel (not static export only)."
+            : "Invalid response from server."
+        );
+      }
       if (!response.ok) {
         throw new Error(data.message || "Failed to submit enquiry.");
       }

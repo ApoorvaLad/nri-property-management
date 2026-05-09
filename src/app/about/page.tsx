@@ -3,12 +3,12 @@ import RevealOnScroll from "../../components/reveal-on-scroll";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about RENTSURE & CO",
+  description: "Learn about RENSTSURE AND CO",
 };
 
 export default function AboutPage() {
   const googleReviewsUrl =
-    "https://www.google.com/search?q=NRI+Property+Management+reviews";
+    "https://www.google.com/search?q=RENSTSURE+AND+CO+reviews";
 
   const featuredReviews = [
     {

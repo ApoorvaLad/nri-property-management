@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RENTSURE & CO",
+  title: "RENSTSURE AND CO",
   description:
     "Manage properties, listings, and tenant communication for owners abroad.",
 };
@@ -39,7 +39,7 @@ export default function RootLayout({
         <div className="site-topbar">
           <div className="site-topbar-inner">
             <div className="site-topbar-left">
-              <a href="mailto:aniketlad.r@gmail.com">aniketlad.r@gmail.com</a>
+              <a href="mailto:enquire@rentsureandco.com">enquire@rentsureandco.com</a>
               <a href="tel:+919730086390">+91 97300 86390</a>
             </div>
             <div className="site-topbar-right">
@@ -69,7 +69,7 @@ export default function RootLayout({
         </div>
         <nav className="site-nav">
           <Link href="/" className="site-nav-logo">
-            RENTSURE <span>& CO</span>
+            RENSTSURE <span>AND CO</span>
           </Link>
           <ul className="site-nav-links">
             <li>

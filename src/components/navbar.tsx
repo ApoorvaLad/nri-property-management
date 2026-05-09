@@ -46,7 +46,7 @@ export default function Navbar() {
           href="/"
           className="font-comic-display text-lg font-semibold tracking-tight text-red-700 transition-colors hover:text-red-800 sm:text-xl"
         >
-          RENTSURE & CO
+          RENSTSURE AND CO
         </Link>
 
         <ul className="flex max-w-[min(100%,42rem)] flex-wrap items-center justify-end gap-x-5 gap-y-2 text-sm sm:max-w-none sm:text-[15px]">

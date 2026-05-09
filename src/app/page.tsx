@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 const GOOGLE_REVIEWS_URL =
-  "https://www.google.com/search?q=RENTSURE+%26+CO+reviews";
+  "https://www.google.com/search?q=RENSTSURE+AND+CO+reviews";
 
 const TICKER_ITEMS = [
   "Property Management",
@@ -11,7 +11,7 @@ const TICKER_ITEMS = [
   "Property Inspection",
   "Renovation & Restoration",
   "Property Sale",
-  "RENTSURE & CO · Pune",
+  "RENSTSURE AND CO · Pune",
 ];
 
 const SERVICES = [
@@ -245,7 +245,7 @@ export default function Home() {
               </h2>
               <div className="solution-body">
                 <p>
-                  RENTSURE & CO takes complete operational ownership of your
+                  RENSTSURE AND CO takes complete operational ownership of your
                   property — from finding the right tenant to collecting rent and handling
                   maintenance.
                 </p>
@@ -492,7 +492,7 @@ export default function Home() {
         <div className="footer-grid">
           <div className="footer-brand">
             <span className="footer-logo">
-              NRI <span>PROPERTIES</span>
+              RENSTSURE <span>AND CO</span>
             </span>
             <p>
               Professional property management for owners who want visibility and peace of
