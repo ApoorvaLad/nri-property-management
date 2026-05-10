@@ -3,12 +3,12 @@ import RevealOnScroll from "../../components/reveal-on-scroll";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about RENSTSURE AND CO",
+  description: "Learn about RENTSUREANDCO",
 };
 
 export default function AboutPage() {
   const googleReviewsUrl =
-    "https://www.google.com/search?q=RENSTSURE+AND+CO+reviews";
+    "https://www.google.com/search?q=RENTSUREANDCO+reviews";
 
   const featuredReviews = [
     {

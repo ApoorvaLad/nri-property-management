@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RENSTSURE AND CO",
+  title: "RENTSUREANDCO.",
   description:
     "Manage properties, listings, and tenant communication for owners abroad.",
 };
@@ -69,7 +69,7 @@ export default function RootLayout({
         </div>
         <nav className="site-nav">
           <Link href="/" className="site-nav-logo">
-            RENSTSURE <span>AND CO</span>
+            RENTSURE<span>ANDCO</span>
           </Link>
           <ul className="site-nav-links">
             <li>

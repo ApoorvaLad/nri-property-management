@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 const GOOGLE_REVIEWS_URL =
-  "https://www.google.com/search?q=RENSTSURE+AND+CO+reviews";
+  "https://www.google.com/search?q=RENTSUREANDCO+reviews";
 
 const TICKER_ITEMS = [
   "Property Management",
@@ -11,7 +11,7 @@ const TICKER_ITEMS = [
   "Property Inspection",
   "Renovation & Restoration",
   "Property Sale",
-  "RENSTSURE AND CO · Pune",
+  "RENTSUREANDCO · Pune",
 ];
 
 const SERVICES = [
@@ -58,7 +58,7 @@ const SERVICES = [
       "Action recommendations",
     ],
     image:
-      "https://images.unsplash.com/photo-1582407947304-fd86f28f8bed?w=600&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80&auto=format&fit=crop",
   },
   {
     number: "04",
@@ -245,7 +245,7 @@ export default function Home() {
               </h2>
               <div className="solution-body">
                 <p>
-                  RENSTSURE AND CO takes complete operational ownership of your
+                  RENTSUREANDCO takes complete operational ownership of your
                   property — from finding the right tenant to collecting rent and handling
                   maintenance.
                 </p>
@@ -342,13 +342,6 @@ export default function Home() {
                 clear communication, and structured execution to property management.
               </p>
             </div>
-          </div>
-          <div className="about-image-wrap reveal d2">
-            <img
-              className="about-main-image"
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80&auto=format&fit=crop"
-              alt="Founder"
-            />
           </div>
         </div>
       </section>
@@ -467,11 +460,19 @@ export default function Home() {
             <div className="contact-details">
               <div className="contact-row">
                 <span className="contact-row-label">Email</span>
-                <span className="contact-row-val">info@nriproperties.com</span>
+                <span className="contact-row-val">
+                  <a href="mailto:enquire@rentsureandco.com" className="text-black underline-offset-2 hover:underline">
+                    enquire@rentsureandco.com
+                  </a>
+                </span>
               </div>
               <div className="contact-row">
                 <span className="contact-row-label">Phone</span>
-                <span className="contact-row-val">+91 00000 00000</span>
+                <span className="contact-row-val">
+                  <a href="tel:+919730086390" className="text-black underline-offset-2 hover:underline">
+                    +91 97300 86390
+                  </a>
+                </span>
               </div>
               <div className="contact-row">
                 <span className="contact-row-label">Location</span>
@@ -492,7 +493,7 @@ export default function Home() {
         <div className="footer-grid">
           <div className="footer-brand">
             <span className="footer-logo">
-              RENSTSURE <span>AND CO</span>
+              RENTSURE<span>ANDCO</span>
             </span>
             <p>
               Professional property management for owners who want visibility and peace of
@@ -874,7 +875,9 @@ export default function Home() {
           max-width: 1200px;
           margin: 0 auto;
         }
-        .about-inner,
+        .about-inner {
+          max-width: 720px;
+        }
         .contact-inner {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -884,15 +887,6 @@ export default function Home() {
           margin-top: 32px;
           line-height: 1.85;
           color: var(--dark);
-        }
-        .about-image-wrap {
-          position: relative;
-        }
-        .about-main-image {
-          width: 100%;
-          aspect-ratio: 4 / 5;
-          object-fit: cover;
-          filter: grayscale(100%) brightness(0.8);
         }
         .testi-grid {
           display: grid;

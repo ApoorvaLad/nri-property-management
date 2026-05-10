@@ -3,7 +3,7 @@ import RevealOnScroll from "../../components/reveal-on-scroll";
 
 export const metadata: Metadata = {
   title: "Blogs",
-  description: "News and insights from RENSTSURE AND CO",
+  description: "News and insights from RENTSUREANDCO",
 };
 
 export default function BlogsPage() {

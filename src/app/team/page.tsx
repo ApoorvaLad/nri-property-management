@@ -3,7 +3,7 @@ import RevealOnScroll from "../../components/reveal-on-scroll";
 
 export const metadata: Metadata = {
   title: "Team",
-  description: "Meet the RENSTSURE AND CO team",
+  description: "Meet the RENTSUREANDCO team",
 };
 
 export default function TeamPage() {

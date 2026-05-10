@@ -30,6 +30,15 @@ export default function PropertyCheckInspectionServicePage() {
           photos so you always know exactly how your property is being
           maintained.
         </p>
+        <div className="relative mt-8 aspect-[4/3] w-full overflow-hidden border border-[#e0ded9] bg-[#f2f1ef]">
+          <img
+            src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&q=85&auto=format&fit=crop"
+            alt="Property inspection — interior condition review"
+            className="h-full w-full object-cover"
+            style={{ filter: "grayscale(100%) brightness(0.85)" }}
+            loading="lazy"
+          />
+        </div>
         <h2 className="mt-8 text-xl font-semibold text-black">
           What is included
         </h2>
